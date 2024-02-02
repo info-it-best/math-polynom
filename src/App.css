@@ -1,0 +1,47 @@
+/** "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. " */
+
+.list-group-item.active {
+  z-index: 2;
+  color: var(--bs-list-group-active-color);
+  background-color: magenta;
+  border-color: var(--bs-list-group-active-border-color);
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item.active a {
+  color: white;
+}
+
+.math-providers-radios label {
+  padding-right: 0.5em;
+}
+
+.math-providers-radios {
+  padding: 0.25em;
+}
+
+.my-select p {
+  padding-bottom: 0em;
+}
+
+.my-help-page span {
+  color:magenta;
+}
+
+#footer {
+  color: #b4b4b4;
+  text-align: center;
+  margin: 5px auto 30px auto;
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 1.8;
+}
+
+#footer a {
+  color: #b4b4b4;
+  text-decoration: none;
+}

@@ -103,6 +103,15 @@ The author did manual NGINX configuration and the following update-from-dist.sh 
     echo "Deployment complete!"
 ```
 
+The NGINX server after installation was configured only in the /etc/nginx/sites-enabled/default file.
+There adter the "location /" the author added the following block and restarted NGINX
+
+```
+    location /math-polynom {
+        rewrite ^/math-polynom(.*)$ /$1 break;
+    }
+```
+
 ## License
 
 Copyright (C) 2024 Igor Merkuryev mercuriev@gmail.com
