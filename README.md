@@ -42,6 +42,7 @@ This approach also applies HMR.
 
 For development w/ React app debugging the above step should be preeded with triggering the VS Code debug configuration below:
 
+```
     {
         "name": "MathReact",
         "request": "launch",
@@ -49,6 +50,7 @@ For development w/ React app debugging the above step should be preeded with tri
         "url": "http://localhost:5173",
         "webRoot": "${workspaceFolder}/math-polynom"
     }
+```
 
 ## Production
 
@@ -62,6 +64,7 @@ However for it to work the following 2 preparations are required:
 
 1) edit ~/.ssh/config file and specify the following setting:
 
+```
     Host tools
         HostName tools.it-best.pl
         Port 22
@@ -69,16 +72,20 @@ However for it to work the following 2 preparations are required:
         IdentityFile /Users/igor/.ssh/tools-it-best.pem
         ServerAliveInterval 60
         ServerAliveCountMax 3
+```
 
 2) on the AWS EC2 instance ther be should be folders and scripts prepared to complete the deployment:
 
+```
     ~/projects/math-polynom
         dist/
         backups/
         update-from-dist.sh
+```
 
 The author did manual NGINX configuration and the following update-from-dist.sh script:
 
+```
     export CP_TIME=`date +"%y-%m-%d-%H-%M-%S"`
     echo "Deploying release at $CP_TIME ..."
     if [ -z "$(ls -A ./dist)" ]; then
@@ -94,6 +101,7 @@ The author did manual NGINX configuration and the following update-from-dist.sh 
     sudo mv -f dist/* /var/www/html
     sudo chown -R ubuntu:ubuntu dist
     echo "Deployment complete!"
+```
 
 ## License
 
