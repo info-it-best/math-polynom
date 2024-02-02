@@ -1,6 +1,6 @@
 # Math-Polynom
 
-http://polynom.it-best.pl
+http://tools.it-best.pl
 
 ## Purpose
 
@@ -25,7 +25,7 @@ However the idea of that approach can be reused.
 
 Click the link below and then the tool is available directly on the home page.
 
-[http://tools.it-best.pl/math-polynom](http://tools.it-best.pl/math-polynom)
+[http://tools.it-best.pl](http://tools.it-best.pl)
 
 Use other pages to find more details about how exactly the tool can be used and also read more details about the author and the tool.
 
