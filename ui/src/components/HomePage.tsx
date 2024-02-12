@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useCurrentPageContext } from '../context/CurrentPageContextProvider';
-import { MathOperationResult, MathProvider, MathResultsData, extractVarNamesFrom, validateVarList } from '../data/types'
+import { MathOperationResult, MathProvider, MathResultsData, extractVarNamesFrom, validateVarList } from '../types'
 import MathService from '../service/MathService'
 import { useStorage } from '../service/storage';
 import MyAlert from './MyAlert';

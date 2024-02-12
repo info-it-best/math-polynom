@@ -1,6 +1,6 @@
 //"Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. "
 
-import { MathFields, MathOperationResult } from '../data/types'
+import { MathFields, MathOperationResult } from '../types'
 import { simplify, rationalize } from 'mathjs'
 
 interface OperationsFactory {

@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+igorm
 dist
 dist-ssr
 *.local
@@ -23,3 +24,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+.prettierrc
